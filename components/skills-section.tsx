@@ -620,7 +620,7 @@ export default function SkillsSection() {
     },
     {
       name: "Ansible",
-      logo: "https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg",
       category: "DevOps",
     },
     {
