@@ -305,6 +305,238 @@
 //   )
 // }
 
+// import type React from "react"
+// import { motion } from "framer-motion"
+
+// interface Skill {
+//   name: string
+//   logo: string
+//   category: string
+// }
+
+// export default function SkillsSection() {
+//   const skills: Skill[] = [
+//     {
+//       name: "React.js",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+//       category: "Frontend",
+//     },
+//     {
+//       name: "Next.js",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+//       category: "Frontend",
+//     },
+//     {
+//       name: "JavaScript",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+//       category: "Frontend",
+//     },
+//     {
+//       name: "TypeScript",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+//       category: "Frontend",
+//     },
+//     {
+//       name: "Tailwind CSS",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+//       category: "Frontend",
+//     },
+//     {
+//       name: "Node.js",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+//       category: "Backend",
+//     },
+//     {
+//       name: "Express.js",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+//       category: "Backend",
+//     },
+//     {
+//       name: "Java Spring Boot",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+//       category: "Backend",
+//     },
+//     {
+//       name: "MongoDB",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+//       category: "Database",
+//     },
+//     {
+//       name: "MySQL",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+//       category: "Database",
+//     },
+//     {
+//       name: "PostgreSQL",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+//       category: "Database",
+//     },
+//     {
+//       name: "Firebase",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+//       category: "Database",
+//     },
+//     {
+//       name: "Docker",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+//       category: "DevOps",
+//     },
+//     {
+//       name: "AWS",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+//       category: "DevOps",
+//     },
+//     {
+//       name: "Ansible",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+//       category: "DevOps",
+//     },
+//     {
+//       name: "CI/CD",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+//       category: "DevOps",
+//     },
+//     {
+//       name: "Kubernetes",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+//       category: "DevOps",
+//     },
+//     {
+//       name: "GitHub Actions",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+//       category: "DevOps",
+//     },
+//     {
+//       name: "Java",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+//       category: "Programming",
+//     },
+//     {
+//       name: "Python",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+//       category: "Programming",
+//     },
+//     {
+//       name: "Data Structures",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thealgorithms/thealgorithms-original.svg",
+//       category: "Computer Science",
+//     },
+//     {
+//       name: "System Design",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+//       category: "Computer Science",
+//     },
+//     {
+//       name: "OOPs",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+//       category: "Computer Science",
+//     },
+//     {
+//       name: "Operating System",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+//       category: "Computer Science",
+//     },
+//     {
+//       name: "Computer Networks",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+//       category: "Computer Science",
+//     },
+//     {
+//       name: "Database Management System",
+//       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+//       category: "Computer Science",
+//     },
+//   ]
+
+//   const categories = Array.from(new Set(skills.map((skill) => skill.category)))
+
+//   return (
+//     <section id="skills" className="py-20 relative">
+//       <div className="container mx-auto px-4">
+//         <motion.div
+//           initial={{ opacity: 0, y: 20 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.5 }}
+//           viewport={{ once: true }}
+//           className="text-center mb-12"
+//         >
+//           <h2 className="text-3xl font-bold font-orbitron text-glow mb-2">
+//             <span className="text-blue-500">System</span> Modules
+//           </h2>
+//           <p className="text-foreground/70 max-w-2xl mx-auto">
+//             Core technologies and frameworks powering the development process.
+//           </p>
+//         </motion.div>
+
+//         <div className="space-y-12">
+//           {categories.map((category, categoryIndex) => (
+//             <motion.div
+//               key={category}
+//               initial={{ opacity: 0, y: 20 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+//               viewport={{ once: true }}
+//               className="space-y-4"
+//             >
+//               <h3 className="text-xl font-orbitron text-glow mb-4">
+//                 <span className="text-blue-500">&lt;</span> {category} <span className="text-blue-500">/&gt;</span>
+//               </h3>
+
+//               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+//                 {skills
+//                   .filter((skill) => skill.category === category)
+//                   .map((skill, index) => (
+//                     <motion.div
+//                       key={skill.name}
+//                       initial={{ opacity: 0, scale: 0.9 }}
+//                       whileInView={{ opacity: 1, scale: 1 }}
+//                       transition={{ duration: 0.3, delay: index * 0.05 }}
+//                       viewport={{ once: true }}
+//                       className="bg-muted/50 border border-blue-500/30 rounded-lg p-4 relative overflow-hidden aspect-square flex items-center justify-center"
+//                     >
+//                       <div className="relative z-10">
+//                         <img 
+//                           src={skill.logo} 
+//                           alt={skill.name} 
+//                           className="w-12 h-12 object-contain" 
+//                         />
+//                       </div>
+//                     </motion.div>
+//                   ))}
+//               </div>
+//             </motion.div>
+//           ))}
+//         </div>
+
+//         {/* 3D Floating Grid Visualization */}
+//         <motion.div
+//           initial={{ opacity: 0 }}
+//           whileInView={{ opacity: 1 }}
+//           transition={{ duration: 1, delay: 0.5 }}
+//           viewport={{ once: true }}
+//           className="mt-20 h-[300px] relative rounded-lg overflow-hidden border border-blue-500/30 box-glow"
+//         >
+//           <div className="absolute inset-0 cyber-grid" />
+
+//           <div className="absolute inset-0 flex items-center justify-center">
+//             <div className="text-center">
+//               <h3 className="text-xl font-orbitron text-glow mb-4">
+//                 <span className="text-blue-500">3D</span> Skill Visualization
+//               </h3>
+//               <p className="text-foreground/70 max-w-md mx-auto">
+//                 Interactive 3D visualization of technology stack and skill relationships.
+//               </p>
+//             </div>
+//           </div>
+//         </motion.div>
+//       </div>
+//     </section>
+//   )
+// }
+
+
+
+
 import type React from "react"
 import { motion } from "framer-motion"
 
@@ -318,132 +550,132 @@ export default function SkillsSection() {
   const skills: Skill[] = [
     {
       name: "React.js",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
       category: "Frontend",
     },
     {
       name: "Next.js",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      logo: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
       category: "Frontend",
     },
     {
       name: "JavaScript",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       category: "Frontend",
     },
     {
       name: "TypeScript",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
       category: "Frontend",
     },
     {
       name: "Tailwind CSS",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      logo: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
       category: "Frontend",
     },
     {
       name: "Node.js",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
       category: "Backend",
     },
     {
       name: "Express.js",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
       category: "Backend",
     },
     {
       name: "Java Spring Boot",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      logo: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
       category: "Backend",
     },
     {
       name: "MongoDB",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       category: "Database",
     },
     {
       name: "MySQL",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
       category: "Database",
     },
     {
       name: "PostgreSQL",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
       category: "Database",
     },
     {
       name: "Firebase",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      logo: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
       category: "Database",
     },
     {
       name: "Docker",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
       category: "DevOps",
     },
     {
       name: "AWS",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
       category: "DevOps",
     },
     {
       name: "Ansible",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+      logo: "https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg",
       category: "DevOps",
     },
     {
-      name: "CI/CD",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+      name: "Jenkins",
+      logo: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg",
       category: "DevOps",
     },
     {
       name: "Kubernetes",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+      logo: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
       category: "DevOps",
     },
     {
       name: "GitHub Actions",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      logo: "https://www.vectorlogo.zone/logos/github/github-icon.svg",
       category: "DevOps",
     },
     {
       name: "Java",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       category: "Programming",
     },
     {
       name: "Python",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
       category: "Programming",
     },
     {
       name: "Data Structures",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thealgorithms/thealgorithms-original.svg",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
       category: "Computer Science",
     },
     {
       name: "System Design",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+      logo: "https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg",
       category: "Computer Science",
     },
     {
-      name: "OOPs",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+      name: "OOP",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       category: "Computer Science",
     },
     {
       name: "Operating System",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
       category: "Computer Science",
     },
     {
       name: "Computer Networks",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+      logo: "https://www.vectorlogo.zone/logos/cisco/cisco-icon.svg",
       category: "Computer Science",
     },
     {
-      name: "Database Management System",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+      name: "Database Management",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg",
       category: "Computer Science",
     },
   ]
@@ -460,10 +692,10 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold font-orbitron text-glow mb-2">
+          <h2 className="text-3xl font-bold mb-2">
             <span className="text-blue-500">System</span> Modules
           </h2>
-          <p className="text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             Core technologies and frameworks powering the development process.
           </p>
         </motion.div>
@@ -478,7 +710,7 @@ export default function SkillsSection() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <h3 className="text-xl font-orbitron text-glow mb-4">
+              <h3 className="text-xl mb-4">
                 <span className="text-blue-500">&lt;</span> {category} <span className="text-blue-500">/&gt;</span>
               </h3>
 
@@ -492,14 +724,17 @@ export default function SkillsSection() {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3, delay: index * 0.05 }}
                       viewport={{ once: true }}
-                      className="bg-muted/50 border border-blue-500/30 rounded-lg p-4 relative overflow-hidden aspect-square flex items-center justify-center"
+                      className="bg-gray-800 border border-blue-500/30 rounded-lg p-4 relative overflow-hidden aspect-square flex flex-col items-center justify-center group hover:border-blue-500 transition-colors"
                     >
-                      <div className="relative z-10">
+                      <div className="relative z-10 flex flex-col items-center gap-2">
                         <img 
                           src={skill.logo} 
                           alt={skill.name} 
-                          className="w-12 h-12 object-contain" 
+                          className="w-12 h-12 object-contain group-hover:scale-110 transition-transform" 
                         />
+                        <span className="text-xs text-center text-gray-400 group-hover:text-blue-400 transition-colors">
+                          {skill.name}
+                        </span>
                       </div>
                     </motion.div>
                   ))}
@@ -514,16 +749,16 @@ export default function SkillsSection() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-20 h-[300px] relative rounded-lg overflow-hidden border border-blue-500/30 box-glow"
+          className="mt-20 h-[300px] relative rounded-lg overflow-hidden border border-blue-500/30"
         >
-          <div className="absolute inset-0 cyber-grid" />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
 
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
-              <h3 className="text-xl font-orbitron text-glow mb-4">
+              <h3 className="text-xl mb-4">
                 <span className="text-blue-500">3D</span> Skill Visualization
               </h3>
-              <p className="text-foreground/70 max-w-md mx-auto">
+              <p className="text-gray-400 max-w-md mx-auto">
                 Interactive 3D visualization of technology stack and skill relationships.
               </p>
             </div>
