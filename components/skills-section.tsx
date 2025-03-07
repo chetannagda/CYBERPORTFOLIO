@@ -650,7 +650,7 @@ export default function SkillsSection() {
     },
     {
       name: "Data Structures",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       category: "Computer Science",
     },
     {
@@ -660,7 +660,7 @@ export default function SkillsSection() {
     },
     {
       name: "OOP",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
       category: "Computer Science",
     },
     {
@@ -670,12 +670,12 @@ export default function SkillsSection() {
     },
     {
       name: "Computer Networks",
-      logo: "https://www.vectorlogo.zone/logos/cisco/cisco-icon.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg",
       category: "Computer Science",
     },
     {
       name: "Database Management",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
       category: "Computer Science",
     },
   ]
